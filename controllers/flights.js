@@ -23,14 +23,13 @@ function show(req, res) {
 }
 
 function newFlight (req, res) {
-    res.render('flights/new', {title: 'Flight Detial'});
+    res.render('flights/new', {title: 'Flight Detail'});
 }
 
 function create (req, res) {
      for(let key in req.body) {
         if (req.body[key] === '') delete req.body[key]
     }
-    console.log(req.body);
     const flight = new Flight(req.body);
     flight.save(function(err) {
         if (err) {
