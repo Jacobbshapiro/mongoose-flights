@@ -194,3 +194,14 @@ table td {
   box-shadow: 10px 5px 5px grey;
   padding: 20px;
 }
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
